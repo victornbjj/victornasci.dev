@@ -31,12 +31,18 @@
 md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
 
                 <a href="#sobre" class="block px-4 py-2 hover:text-red-600">Sobre</a>
+                <a href="#experiencia" class="block px-4 py-2 hover:text-red-600">Experiência</a>
                 <a href="#tecnologias" class="block px-4 py-2 hover:text-red-600">Tecnologias</a>
                 <a href="#habilidades" class="block px-4 py-2 hover:text-red-600">Habilidades</a>
                 <a href="#projetos" class="block px-4 py-2 hover:text-red-600">Projetos</a>
                 <a href="#contato" class="block px-4 py-2 hover:text-red-600">Contato</a>
 
             </div>
+
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Ativar modo escuro"
+                aria-pressed="false" title="Ativar modo escuro">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
 
 
 
@@ -87,96 +93,183 @@ md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
 
     </section>
 
-    <section id="tecnologias" class="py-20 px-6 max-w-6xl mx-auto text-center">
+    <section id="experiencia" class="experience-section py-20 px-6 text-center">
 
-        <h2 class="text-3xl font-bold mb-12 text-center">
-            Tecnologias
-        </h2>
-        <div class="grid md:grid-cols-3 gap-8">
+        <h2 class="text-3xl font-bold mb-12 text-center">Experiência</h2>
 
-            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Linguagens</h3>
+        <div class="experience-timeline">
+            <article class="experience-item">
+                <div class="experience-marker" aria-hidden="true"></div>
+                <div class="experience-content">
+                    <p class="experience-period">Fevereiro/2026 — presente</p>
+                    <h3>Monitor de Programação Java II</h3>
+                    <p class="experience-company">UNIESP Centro Universitário</p>
+                    <p class="experience-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> João Pessoa, PB</p>
+                    <ul>
+                        <li>Atuação como monitor de back-end avançado, auxiliando no ensino e acompanhamento de alunos no desenvolvimento de aplicações Java com Spring Boot.</li>
+                        <li>Apoio no ensino de métodos e códigos HTTP e integração com banco de dados via JPA e Hibernate.</li>
+                        <li>Suporte em segurança com Spring Security e apresentação da arquitetura em camadas (MVC).</li>
+                    </ul>
+                </div>
+            </article>
 
-                <ul class="space-y-2">
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
+            <article class="experience-item">
+                <div class="experience-marker" aria-hidden="true"></div>
+                <div class="experience-content">
+                    <p class="experience-period">Fevereiro/2026 — presente</p>
+                    <h3>Monitor de Banco de Dados (SQL)</h3>
+                    <p class="experience-company">UNIESP Centro Universitário</p>
+                    <p class="experience-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> João Pessoa, PB</p>
+                    <ul>
+                        <li>Apoio a alunos no desenvolvimento e resolução de atividades relacionadas a bancos de dados e SQL.</li>
+                        <li>Orientação na elaboração de consultas SQL, manipulação e análise de dados.</li>
+                        <li>Apoio na compreensão de modelagem de bancos de dados e relacionamento entre entidades.</li>
+                        <li>Análise e correção de consultas, identificação de erros e inconsistências, com suporte em modelagem relacional e utilização de SGBDs.</li>
+                    </ul>
+                </div>
+            </article>
 
-
-            <div class="bg-white p-6 rounded shadow  hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Backend</h3>
-
-                <ul class="space-y-2">
-                    <li>Spring Boot</li>
-                    <li>Flask</li>
-                    <li>Django</li>
-                    <li>APIs REST</li>
-                </ul>
-            </div>
-
-
-            <div class="bg-white p-6 rounded shadow  hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Banco de Dados</h3>
-
-                <ul class="space-y-2">
-                    <li>SQLite</li>
-                    <li>PostgreSQL</li>
-                    <li>Modelagem Relacional</li>
-                </ul>
-            </div>
-
-
-
+            <article class="experience-item">
+                <div class="experience-marker" aria-hidden="true"></div>
+                <div class="experience-content">
+                    <p class="experience-period">Abril/2025 — Junho/2026</p>
+                    <h3>Desenvolvedor Full-Stack (Auxiliar Administrativo)</h3>
+                    <p class="experience-company">LC Construtora</p>
+                    <p class="experience-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> João Pessoa, PB</p>
+                    <ul>
+                        <li>Automação de dados estruturados (SQL) com validações, aplicando regras de negócio e consistência de dados.</li>
+                        <li>Desenvolvimento de rotinas de processamento em lote que reduziram o tempo de geração de relatórios em aproximadamente 30%.</li>
+                        <li>Desenvolvimento de aplicação backend em Flask com autenticação e controle de acesso baseado em papéis (RBAC).</li>
+                        <li>Deploy em cloud (Render) e documentação técnica de regras de negócio.</li>
+                    </ul>
+                </div>
+            </article>
         </div>
 
+    </section>
 
+    <section id="tecnologias" class="py-20 px-6 max-w-6xl mx-auto text-center">
 
+        <div class="section-heading">
+            <p class="section-kicker">Stack em prática</p>
+            <h2 class="text-3xl font-bold">Tecnologias</h2>
+            <p class="section-intro">Ferramentas presentes nos projetos, da API ao deploy.</p>
+        </div>
+
+        <div class="tech-carousel" aria-label="Carrossel de tecnologias">
+            <button class="tech-carousel-button tech-carousel-button--prev" type="button" aria-label="Tecnologia anterior">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="tech-track">
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">01 / Backend</p>
+                    <h3>APIs e serviços</h3>
+                    <p>Construção de aplicações web organizadas e prontas para crescer.</p>
+                    <div class="tech-tags"><span>Java</span><span>Python</span><span>Spring Boot</span><span>Flask</span><span>FastAPI</span></div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">02 / Segurança</p>
+                    <h3>Auth e proteção</h3>
+                    <p>Fluxos de autenticação, autorização e controle de acesso.</p>
+                    <div class="tech-tags"><span>JWT</span><span>Spring Security</span><span>Flask-Login</span><span>Passlib</span><span>RBAC</span></div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">03 / Dados</p>
+                    <h3>Persistência e SQL</h3>
+                    <p>Modelagem, consultas e integração com bancos relacionais.</p>
+                    <div class="tech-tags"><span>PostgreSQL</span><span>SQLite</span><span>SQLAlchemy</span><span>JPA</span><span>Hibernate</span><span>pgvector</span></div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-display" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">04 / Frontend</p>
+                    <h3>Interfaces web</h3>
+                    <p>Experiências responsivas com interação e atualização em tempo real.</p>
+                    <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Tabulator</span></div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">05 / Inteligência</p>
+                    <h3>IA aplicada</h3>
+                    <p>Integração de modelos generativos e busca baseada em conhecimento.</p>
+                    <div class="tech-tags"><span>Spring AI</span><span>OpenAI API</span><span>RAG</span><span>Embeddings</span></div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-card-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></div>
+                    <p class="tech-card-label">06 / Entrega</p>
+                    <h3>Deploy e qualidade</h3>
+                    <p>Automação, documentação, testes e empacotamento das aplicações.</p>
+                    <div class="tech-tags"><span>Docker</span><span>Docker Compose</span><span>GitLab CI/CD</span><span>JUnit 5</span><span>Pytest</span><span>Swagger</span></div>
+                </article>
+            </div>
+
+            <button class="tech-carousel-button tech-carousel-button--next" type="button" aria-label="Próxima tecnologia">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
     </section>
 
-    <section id="habilidades" class="py-20 px-6 bg-gray-100 text-center">
+    <section id="habilidades" class="skills-section py-20 px-6 text-center">
 
-        <h2 class="text-3xl font-bold mb-12 text-center">
-            Habilidades
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-
-            <div class="bg-white p-6 rounded shadow  hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Ferramentas</h3>
-
-                <ul class="space-y-2">
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Postman</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Metodologias</h3>
-
-                <ul class="space-y-2">
-                    <li>Scrum</li>
-                    <li>Kanban</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-semibold mb-4">Conceitos</h3>
-
-                <ul class="space-y-2">
-                    <li>Programação Orientada a Objetos</li>
-                    <li>MVC</li>
-                    <li>HTTP / REST</li>
-                    <li>Integração de APIs</li>
-                    <li>Metodologias Ágeis</li>
-                </ul>
-            </div>
-
+        <div class="section-heading">
+            <p class="section-kicker">Como eu trabalho</p>
+            <h2 class="text-3xl font-bold">Habilidades</h2>
+            <p class="section-intro">Competências que conectam código, produto e operação.</p>
         </div>
 
+        <div class="skills-list">
+            <article class="skill-row">
+                <div class="skill-index">01</div>
+                <div class="skill-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+                <div class="skill-content">
+                    <h3>Arquitetura de APIs</h3>
+                    <p>Desenho de serviços REST, organização em camadas e integração entre sistemas.</p>
+                    <div class="skill-tags"><span>REST</span><span>MVC</span><span>CRUD</span><span>OpenFeign</span></div>
+                </div>
+                <div class="skill-meter" aria-label="Nível avançado"><span style="--skill-level: 88%"></span></div>
+            </article>
+
+            <article class="skill-row">
+                <div class="skill-index">02</div>
+                <div class="skill-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
+                <div class="skill-content">
+                    <h3>Segurança e dados</h3>
+                    <p>Aplicação de regras de negócio, validações, autenticação e persistência confiável.</p>
+                    <div class="skill-tags"><span>JWT</span><span>RBAC</span><span>SQL</span><span>JPA</span><span>SQLAlchemy</span></div>
+                </div>
+                <div class="skill-meter" aria-label="Nível avançado"><span style="--skill-level: 84%"></span></div>
+            </article>
+
+            <article class="skill-row">
+                <div class="skill-index">03</div>
+                <div class="skill-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div>
+                <div class="skill-content">
+                    <h3>Experiência frontend</h3>
+                    <p>Interfaces responsivas, componentes claros e interações que facilitam o uso.</p>
+                    <div class="skill-tags"><span>Responsividade</span><span>UX</span><span>JavaScript</span><span>Tabulator</span></div>
+                </div>
+                <div class="skill-meter" aria-label="Nível em desenvolvimento"><span style="--skill-level: 72%"></span></div>
+            </article>
+
+            <article class="skill-row">
+                <div class="skill-index">04</div>
+                <div class="skill-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+                <div class="skill-content">
+                    <h3>Entrega contínua</h3>
+                    <p>Preparação para execução, testes automatizados, documentação e deploy.</p>
+                    <div class="skill-tags"><span>Git</span><span>Docker</span><span>CI/CD</span><span>JUnit</span><span>Pytest</span></div>
+                </div>
+                <div class="skill-meter" aria-label="Nível avançado"><span style="--skill-level: 80%"></span></div>
+            </article>
+        </div>
     </section>
 
 
@@ -185,23 +278,44 @@ md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
 
         <h2 class="text-3xl font-bold mb-12 text-center">Projetos</h2>
 
+        <div class="project-filters" role="group" aria-label="Filtrar projetos por stack">
+            <button class="project-filter is-active" type="button" data-filter="all" aria-pressed="true">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i> Todos
+            </button>
+            <button class="project-filter" type="button" data-filter="backend" aria-pressed="false">
+                <i class="fa-solid fa-server" aria-hidden="true"></i> Backend
+            </button>
+            <button class="project-filter" type="button" data-filter="frontend" aria-pressed="false">
+                <i class="fa-solid fa-display" aria-hidden="true"></i> Frontend
+            </button>
+            <button class="project-filter" type="button" data-filter="devops" aria-pressed="false">
+                <i class="fa-solid fa-infinity" aria-hidden="true"></i> DevOps
+            </button>
+        </div>
+
         <div class="grid md:grid-cols-2 gap-10">
 
 
 
 
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
 
-                <h3 class="text-xl font-bold mb-2">Sistema web Imobiliario </h3>
+                <h3 class="text-xl font-bold mb-2">Sistema de Imóveis — LC Construtora</h3>
 
                 <p class="text-gray-600 mb-4">
-                    SIstema web modular com painel de controle utilizado Flask e SQLite.
+                    API REST em JSON para gestão de imóveis, com CRUD completo, regras de negócio e validações.
                 </p>
 
                 <p class="text-sm text-gray-500 mb-4">
-                    Tecnologias: Python • Flask • SQLite
+                    Tecnologias: Python • Flask • SQLite • REST API • Flask-Login • Pytest
                 </p>
+
+                <ul class="project-details mb-4">
+                    <li>Autenticação e controle de acesso baseado em papéis.</li>
+                    <li>Arquitetura modular com App Factory, Blueprints e camada de serviços.</li>
+                    <li>Testes automatizados para os principais fluxos da aplicação.</li>
+                </ul>
 
                 <div class="flex gap-4">
 
@@ -220,35 +334,90 @@ md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
             </div>
 
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
 
-                <h3 class="text-xl font-bold mb-2">API REST</h3>
+                <h3 class="text-xl font-bold mb-2">Clinic API</h3>
 
                 <p class="text-gray-600 mb-4">
-                    API para blog utilizado Flask e SQLite.
+                    Sistema de gestão de consultório médico para médicos, pacientes e agendamentos.
                 </p>
 
                 <p class="text-sm text-gray-500 mb-4">
-                    Tecnologias: Python • Flask • SQLite
+                    Tecnologias: Java 21 • Spring Boot 3.4 • Spring Security • JWT • JPA • PostgreSQL • Docker • JUnit 5 • Swagger
                 </p>
 
+                <ul class="project-details mb-4">
+                    <li>APIs REST com operações CRUD, regras de negócio e persistência.</li>
+                    <li>Autenticação JWT e autorização baseada em papéis (RBAC).</li>
+                    <li>Integração externa com OpenFeign, documentação OpenAPI e testes automatizados.</li>
+                </ul>
+
                 <div class="flex gap-4">
-
-                    <a href="#" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
-                        <i class="fa-brands fa-github"></i>GitHub
+                    <a href="https://github.com/victornbjj/clinica-medica-api" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
                     </a>
-
-                    <a href="#" target="_blank" class="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
-                    </a>
-
                 </div>
 
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
 
-                <h3 class="text-xl font-bold mb-2">API REST Spring Boot</h3>
+                <h3 class="text-xl font-bold mb-2">Assistente RAG — YAITEC Atende</h3>
+
+                <p class="text-gray-600 mb-4">
+                    Backend com IA generativa para perguntas e respostas baseado em uma base de conhecimento.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: Java 21 • Spring Boot • Spring AI • OpenAI API • PostgreSQL • pgvector • Docker • JUnit 5 • Mockito
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Pipeline de embeddings, recuperação vetorial e processamento RAG.</li>
+                    <li>Ingestão automática e idempotente da base de conhecimento.</li>
+                    <li>Testes automatizados e containerização com Docker.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com/victornbjj/assistente_rag" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="devops">
+
+                <h3 class="text-xl font-bold mb-2">Pipeline CI/CD com GitLab Runner</h3>
+
+                <p class="text-gray-600 mb-4">
+                    Pipeline automatizado para build e deploy de imagens Docker em uma instância AWS EC2.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: AWS EC2 • Ubuntu Linux • GitLab CI/CD • GitLab Runner • Docker • Git • Shell Script
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Configuração do ambiente Linux na AWS EC2 para execução dos pipelines.</li>
+                    <li>Integração do GitLab Runner com Docker e permissões Linux.</li>
+                    <li>Automação das etapas de build e deploy.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://gitlab.com/victornbjj/projeto-cicd-exemplo" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-gitlab"></i> GitLab
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
+
+                <h3 class="text-xl font-bold mb-2">Todo List - Spring</h3>
 
                 <p class="text-gray-600 mb-4">
                     API para gerenciamento Lista de tarefas e de usuários utilizando Spring Boot e H2database.
@@ -274,7 +443,123 @@ md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
 
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
+
+                <h3 class="text-xl font-bold mb-2">Agenda Médica</h3>
+
+                <p class="text-gray-600 mb-4">
+                    Aplicação web de agenda médica com login, proteção de rotas e tabela interativa de agendamentos.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: Python 3.12 • Flask 3 • SQLite • PyJWT • Requests • Tabulator • Docker • Docker Compose
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Autenticação com JWT armazenado em cookie HttpOnly e proteção de rotas.</li>
+                    <li>Integração HTTP real com API mockada em Blueprint e tratamento de falhas.</li>
+                    <li>Busca em tempo real por paciente, CPF ou médico com tabela Tabulator.</li>
+                    <li>Testes automatizados para login, acesso protegido e indisponibilidade da API.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com/victornbjj/agenda_medica" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="backend">
+
+                <h3 class="text-xl font-bold mb-2">Auth Simples</h3>
+
+                <p class="text-gray-600 mb-4">
+                    API de autenticação com cadastro, login e emissão de tokens JWT.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: Python 3.13 • FastAPI • SQLAlchemy • SQLite • Passlib • JWT
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Cadastro e login de usuários com validação de dados.</li>
+                    <li>Senhas armazenadas com hash bcrypt e autenticação baseada em JWT.</li>
+                    <li>Organização em camadas com controllers, services, models, schemas e security.</li>
+                    <li>Documentação interativa disponível com Swagger UI e ReDoc.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com/victornbjj/auth-sistema-fast" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="frontend">
+
+                <h3 class="text-xl font-bold mb-2">Relógio Digital</h3>
+
+                <p class="text-gray-600 mb-4">
+                    Relógio em tempo real com interface limpa e funcional, explorando dinamicidade e layout responsivo.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: HTML • CSS • JavaScript
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Atualização dinâmica do horário em tempo real.</li>
+                    <li>Interface responsiva com foco em clareza e usabilidade.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com/victornbjj/relogio_html" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://victornbjj.github.io/relogio_html/" target="_blank" rel="noopener noreferrer"
+                        class="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="frontend">
+
+                <h3 class="text-xl font-bold mb-2">Login Page</h3>
+
+                <p class="text-gray-600 mb-4">
+                    Tela de autenticação com foco visual em usabilidade, identidade e experiência de login moderna.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">
+                    Tecnologias: HTML • CSS • JavaScript
+                </p>
+
+                <ul class="project-details mb-4">
+                    <li>Estrutura de login com organização visual clara e objetiva.</li>
+                    <li>Interface responsiva orientada à experiência do usuário.</li>
+                </ul>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com/victornbjj/tela-login" target="_blank" rel="noopener noreferrer"
+                        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://victornbjj.github.io/tela-login/" target="_blank" rel="noopener noreferrer"
+                        class="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow hover:shadow-lg transition p-6" data-stack="frontend">
 
                 <h3 class="text-xl font-bold mb-2">Portfólio Web Colaborativo</h3>
 
@@ -307,25 +592,43 @@ md:static md:flex md:flex-row md:space-x-6 md:shadow-none">
     </section>
 
 
-    <section id="contato" class="py-20 bg-gray-100 text-center">
+    <section id="contato" class="contact-section py-20 px-6 text-center">
 
-        <div class="space-y-4">
+        <div class="contact-content">
+            <div class="contact-layout">
+                <div class="contact-copy">
+                    <p class="section-kicker">Vamos conversar</p>
+                    <h2 class="text-3xl font-bold">Entre em contato comigo!</h2>
+                    <p class="contact-intro">Aberto a oportunidades, projetos e boas conversas sobre tecnologia.</p>
 
-            <h2 class="text-3xl font-bold">Entre em contato comigo!</h2>
+                    <a class="resume-button" href="documents/Joao_Victor_Nascimento_site.pdf" download="Joao_Victor_Nascimento.pdf">
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        Baixar currículo
+                    </a>
+                </div>
 
-            <p><i class="fa-solid fa-envelope"></i>Email: victorifpb78@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>Telefone: +55 83 9921-7139</p>
+                <div class="contact-grid">
+                <a class="contact-card" href="mailto:victornasci.dev@gmail.com">
+                    <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                    <span><strong>E-mail</strong><small>victornasci.dev@gmail.com</small></span>
+                </a>
 
-            <a href="https://github.com/victornbjj" target="_blank"
-                class="block text-red-600 font-semibold hover:text-red-800 transition">
-                <i class="fa-brands fa-github"></i> victornbjj
-            </a>
+                <a class="contact-card" href="tel:+558399217139">
+                    <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                    <span><strong>Telefone</strong><small>+55 83 9921-7139</small></span>
+                </a>
 
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-do-nascimento-7566a6231/" target="_blank"
-                class="block text-blue-600 font-semibold hover:text-blue-800 transition">
-                <i class="fa-brands fa-linkedin"></i> João Victor Pereira do Nascimento
-            </a>
+                <a class="contact-card" href="https://github.com/victornbjj" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                    <span><strong>GitHub</strong><small>@victornbjj</small></span>
+                </a>
 
+                <a class="contact-card" href="https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-do-nascimento-7566a6231/" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
+                    <span><strong>LinkedIn</strong><small>João Victor Pereira do Nascimento</small></span>
+                </a>
+                </div>
+            </div>
         </div>
 
     </section>
