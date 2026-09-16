@@ -1,90 +1,97 @@
-# 🖥️ Portfólio — João Victor P. Nascimento
+# Portfolio - Joao Victor P. Nascimento
 
-Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, apresentando minha trajetória, tecnologias, habilidades e projetos como desenvolvedor full-stack.
+Portfolio pessoal de Joao Victor P. Nascimento, desenvolvedor full-stack. O site apresenta sua trajetoria, experiencias, tecnologias, habilidades, projetos e formas de contato.
 
-🔗 **[Ver online](https://victornbjj.github.io/joao-victor-dev/)**
+## Acesso
 
----
+- [Portfolio online](https://victornbjj.github.io/joao-victor-dev/)
+- [Curriculo em PDF](documents/Joao_Victor_Nascimento_site.pdf)
 
-## 📸 Preview
+## Tecnologias do site
 
-> Portfólio responsivo com design editorial, animações de scroll e menu mobile.
+- **HTML5** para a estrutura semantica.
+- **CSS3** com variaveis, layouts responsivos, animacoes e tema escuro.
+- **JavaScript Vanilla** para interacoes sem framework.
+- **Tailwind CSS** via CDN para classes utilitarias.
+- **Font Awesome 6** via CDN para icones.
+- **Google Fonts** com Syne e Space Mono.
 
----
+## Funcionalidades
 
-## 🛠️ Tecnologias utilizadas
+- Navegacao fixa com menu responsivo para mobile.
+- Alternancia entre modo claro e escuro, com preferencia salva no `localStorage`.
+- Carrossel horizontal de tecnologias com suporte a botoes e rolagem por toque.
+- Linha do tempo responsiva para experiencias profissionais.
+- Habilidades apresentadas em lista tecnica com tags e indicadores visuais.
+- Filtros de projetos por stack: Todos, Backend, Frontend e DevOps.
+- Animacoes de entrada conforme as secoes entram na tela.
+- Area de contato com e-mail, telefone, GitHub, LinkedIn e download do curriculo.
+- Suporte a `prefers-reduced-motion` para reduzir animacoes quando solicitado pelo sistema.
 
-- **HTML5** — estrutura semântica
-- **CSS3** — estilização customizada com variáveis, animações e responsividade
-- **JavaScript (Vanilla)** — menu mobile, scroll reveal e efeito de sombra na nav
-- **Tailwind CSS** (via CDN) — classes utilitárias de layout
-- **Font Awesome 6** (via CDN) — ícones
-- **Google Fonts** — fontes Syne e Space Mono
+## Experiencias apresentadas
 
----
+- **Monitor de Programacao Java II** - UNIESP Centro Universitario.
+- **Monitor de Banco de Dados (SQL)** - UNIESP Centro Universitario.
+- **Desenvolvedor Full-Stack (Auxiliar Administrativo)** - LC Construtora.
 
-## 📁 Estrutura do projeto
+## Projetos
 
-```
-joao-victor-dev/
-├── index.html        # Página principal
-├── script.js         # Interações e animações
-├── css/
-│   └── style.css     # Estilos customizados
-└── img/              # Screenshots dos projetos
-    ├── lc-site.png
-    ├── lc-painel-admin.png
-    ├── blog-api-get.png
-    ├── blog-api-post.png
-    └── blog-api-delet.png
-```
+### Backend
 
----
+| Projeto | Tecnologias | Links |
+|---|---|---|
+| Sistema de Imoveis - LC Construtora | Python, Flask, SQLite, REST API, Flask-Login, Pytest | [GitHub](https://github.com/victornbjj/LC-CONSTRUTORA) · [Demo](https://lc-constutora-5.onrender.com/) |
+| Clinic API | Java 21, Spring Boot 3.4, Spring Security, JWT, JPA, PostgreSQL, Docker, JUnit 5, Swagger | [GitHub](https://github.com/victornbjj/clinica-medica-api) |
+| Assistente RAG - YAITEC Atende | Java 21, Spring Boot, Spring AI, OpenAI API, PostgreSQL, pgvector, Docker, JUnit 5, Mockito | [GitHub](https://github.com/victornbjj/assistente_rag) |
+| Todo List - Spring | Java, Spring Boot, H2 | [GitHub](https://github.com/victornbjj/ProjectSpring) · [Demo](https://todolista-2780.onrender.com) |
+| Agenda Medica | Python 3.12, Flask 3, SQLite, PyJWT, Requests, Tabulator, Docker | [GitHub](https://github.com/victornbjj/agenda_medica) |
+| Auth Simples | Python 3.13, FastAPI, SQLAlchemy, SQLite, Passlib, JWT | [GitHub](https://github.com/victornbjj/auth-sistema-fast) |
 
-## ✨ Funcionalidades
-
-- Menu de navegação fixo com efeito ao rolar
-- Menu hambúrguer responsivo para mobile
-- Animações de entrada ao fazer scroll (scroll reveal)
-- Cards com hover interativo
-- Links diretos para GitHub e demos dos projetos
-- Seções: Sobre, Tecnologias, Habilidades, Projetos e Contato
-
----
-
-## 📂 Projetos em destaque
+### DevOps
 
 | Projeto | Tecnologias | Link |
 |---|---|---|
-| Sistema Web Imobiliário | Python, Flask, SQLite | [GitHub](https://github.com/victornbjj/LC-CONSTRUTORA) · [Demo](https://lc-constutora-5.onrender.com/) |
-| API REST Blog | Python, Flask, SQLite | [GitHub](https://github.com/victornbjj/blog_api) |
-| API REST Spring Boot | Java, Spring Boot, PostgreSQL | [GitHub](https://github.com/victornbjj/ProjectSpring) |
-| Portfólio Colaborativo | HTML, CSS, JavaScript | [GitHub](https://github.com/victornbjj/portifolio_valdeise_patricia_joao-victor) · [Demo](https://patricia-de-oliveira.github.io/portifolio_valdeise_patricia_joao-victor/) |
+| Pipeline CI/CD com GitLab Runner | AWS EC2, Ubuntu Linux, GitLab CI/CD, Docker, Git, Shell Script | [GitLab](https://gitlab.com/victornbjj/projeto-cicd-exemplo) |
 
----
+### Frontend
 
-## 🚀 Como rodar localmente
+| Projeto | Tecnologias | Links |
+|---|---|---|
+| Relogio Digital | HTML, CSS, JavaScript | [GitHub](https://github.com/victornbjj/relogio_html) · [Demo](https://victornbjj.github.io/relogio_html/) |
+| Login Page | HTML, CSS, JavaScript | [GitHub](https://github.com/victornbjj/tela-login) · [Demo](https://victornbjj.github.io/tela-login/) |
+| Portfolio Web Colaborativo | HTML, CSS, JavaScript | [GitHub](https://github.com/victornbjj/portifolio_valdeise_patricia_joao-victor) · [Demo](https://patricia-de-oliveira.github.io/portifolio_valdeise_patricia_joao-victor/) |
 
-```bash
-# Clone o repositório
-git clone https://github.com/victornbjj/joao-victor-dev.git
+## Estrutura do projeto
 
-# Acesse a pasta
-cd joao-victor-dev
-
-# Abra o arquivo no navegador
-# (basta abrir o index.html diretamente, não precisa de servidor)
+```text
+joao-victor-dev/
+├── index.html
+├── script.js
+├── css/
+│   └── style.css
+├── documents/
+│   └── Joao_Victor_Nascimento_site.pdf
+└── img/
 ```
 
----
+## Como executar localmente
 
-## 📬 Contato
+```bash
+git clone https://github.com/victornbjj/joao-victor-dev.git
+cd joao-victor-dev
+```
 
-- 📧 victorifpb78@gmail.com
-- 📱 +55 83 9921-7139
-- 💼 [LinkedIn](https://www.linkedin.com/in/joão-victor-pereira-do-nascimento-7566a6231/)
-- 🐙 [GitHub](https://github.com/victornbjj)
+Abra o arquivo `index.html` no navegador. O projeto e estatico e nao exige servidor ou instalacao de dependencias locais. As fontes, icones e Tailwind CSS sao carregados por CDN quando houver conexao com a internet.
 
----
+## Contato
 
-© 2026 João Victor P. Nascimento — Feito com ❤️ e muito ☕
+- E-mail: [victornasci.dev@gmail.com](mailto:victornasci.dev@gmail.com)
+- Telefone: [+55 83 9921-7139](tel:+558399217139)
+- [GitHub](https://github.com/victornbjj)
+- [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-do-nascimento-7566a6231/)
+
+## Licenca
+
+Este projeto esta disponivel sob a [licenca MIT](LICENSE).
+
+Copyright 2026 Joao Victor P. Nascimento.
